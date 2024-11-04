@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>식품의 모든 것</title>
+    <style>div{
+        background-color: bisque;
+        width: 800px;
+        border: 5px solid brown;
+        border-style: double;
+        margin: 20px;
+        padding: 10px;
+        /* 주석처리는 ctrl + / */
+        }
+        #fix{
+            position: fixed; /*창을 고정시킬때 쓰는 거 fixed:스크롤해도 같이 움직임 absolute 스크롤하면 같이 안 움직임*/
+            top: 50px;
+            right: 50px;
+            width: 200px;
+            height: 100px;
+            font-weight: bold;
+            text-align: center;
+            border-color: olive;
+            border-style: dotted;
+            background-color: lightgray;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            padding-right: 20px;
+            display: flex;
+        }
+        #menubar {
+            background-color: darkgray;
+            }
+            #menubar ul {
+            margin : 50;
+            padding : 0;
+            width : 567px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+            }
+            #menubar ul li {
+            display : inline-block; /* 새 줄로 넘어가지 않게 */
+            list-style-type : none; /* 마커 삭제 */
+            padding : 10px 15px; /* top=bottom=0, left=right=15px */
+            }
+            #menubar ul li a {
+            color : white;
+            text-decoration : none; /* 링크 보이지 않게 */
+            }
+            #menubar ul li a:hover {
+            color: lightgoldenrodyellow; /* 마우스 올라 갈 때 색 */
+            }
+        
+        </style>
+</head>
+<body>
+    <h1 style="text-align: center;">식품의 모든 것</h1>
+    <nav id="menubar">
+        <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">지식 한입</a></li>
+        <li><a href="#">맛집</a></li>
+        <li><a href="#">레시피</a></li>
+        <li><a href="#">F.A.Q</a></li>
+        </ul>
+    </nav>        
+    <div>
+        <h2>슈퍼푸드란 무엇인가?</h2>
+        <h3>대표적인 슈퍼푸드 소개</h3>
+        <ol>
+            <img src="image/스피루리나.jpg">
+            <li>스피루리나</li>
+                <ul>
+                    <li>스피루리나는 단세포 조류(藻類)로, 고농축 단백질과 다양한 비타민, 미네랄을 포함하고 있어 '완벽한 식품'으로 불리기도 합니다. 특히, 체내에서 쉽게 흡수되는 형태의 단백질을 포함하고 있어 채식주의자나 비건에게 좋은 단백질 공급원이 됩니다. 스피루리나는 면역력 강화, 항염 작용, 에너지 증진에 도움을 줄 수 있습니다.</li>                
+                </ul>
+            <img src="image/아사이베리.jpg">
+            <li>아사이베리</li>
+                <ul>
+                    <li>브라질 원산지의 아사이베리는 항산화 성분인 안토시아닌이 풍부하여 피부 건강에 좋고 노화 방지에 도움을 줍니다. 아사이베리는 과일 중에서도 항산화 능력이 뛰어난 편에 속하며, 맛도 좋아 스무디나 요거트와 함께 섭취하기 좋습니다.</li>                
+                </ul>
+            <img src="image/퀴노아.jpg">
+            <li>퀴노아</li>
+                <ul>
+                    <li>‘완전 단백질’로 불리는 퀴노아는 필수 아미노산을 모두 포함한 곡물입니다. 글루텐이 없으면서도 단백질 함유량이 높아, 특히 글루텐 프리 식단을 따르는 사람에게 인기가 많습니다. 퀴노아는 식이섬유와 미네랄도 풍부하여 혈당 안정, 체중 관리에도 도움을 줄 수 있습니다.</li>                
+                </ul>
+            <img src="image/치아씨드.jpg">
+            <li>치아씨드</li>
+                <ul>
+                    <li>치아씨드는 식물성 오메가-3 지방산, 섬유질, 칼슘이 풍부한 씨앗입니다. 물을 만나면 젤리 같은 형태로 변해 포만감을 주고, 소화기관을 건강하게 유지하는 데 도움을 줍니다. 특히 오메가-3 지방산은 심혈관 건강에 좋고, 뼈 건강을 유지하는 데 도움을 줄 수 있습니다.</li>                
+                </ul>
+            <img src="마카.jpg">
+            <li>마카</li>
+                <ul>
+                    <li>페루 고산지대에서 자라는 마카는 천연 활력 보충제로 널리 알려져 있습니다. 에너지를 증가시키고 피로를 줄여주며, 특히 스트레스 완화와 면역력 강화에 좋다고 알려져 있습니다. 마카는 분말 형태로 판매되며, 스무디나 요거트에 섞어 먹기 좋습니다.</li>                
+                </ul>
+        </ol>
+
+    </div>
+    <div style="background-color: gainsboro; border: solid rgb(92, 172, 60); border-style: dashed;">
+        <h3>슈퍼푸드를 일상에 쉽게 적용하는 방법</h3>
+        <ol>
+            <li>아침 식사에 추가하기</li>
+                <ul>
+                    <li>스무디 볼에 첨가: 아사이베리나 스피루리나, 치아씨드를 스무디 볼에 넣어보세요. 냉동 과일, 아몬드 우유 또는 요거트를 베이스로 스무디를 만들고, 슈퍼푸드 분말을 살짝 추가해 믹서에 갈아주면 아침에 손쉽게 에너지를 충전할 수 있는 스무디가 완성됩니다.</li>                
+                </ul>
+            <li>점심과 저녁 식사에 슈퍼푸드 더하기</li>
+                <ul>
+                    <li>샐러드 토핑: 신선한 채소 샐러드에 퀴노아나 햄프씨드를 더하면 한 끼 식사로도 충분한 단백질과 식이섬유를 보충할 수 있습니다. 퀴노아는 미리 삶아 준비해두면 샐러드에 곁들이기 좋고, 바쁜 날에도 손쉽게 사용할 수 있습니다.</li>                
+                </ul>
+            <li>간식으로 활용하기</li>
+                <ul>
+                    <li>요거트 볼: 요거트 위에 치아씨드, 아사이베리 분말, 베리류 과일을 추가하면 간단하면서도 영양이 풍부한 간식이 됩니다. 항산화 효과가 뛰어난 블루베리나 라즈베리를 곁들이면 시각적으로도 아름답고 건강에도 유익합니다.</li>                
+                </ul>
+            <li>음료와 간단한 디저트로 활용하기</li>
+                <ul>
+                    <li>슈퍼푸드 차와 주스: 스피루리나, 마카, 아사이베리 분말 등을 물이나 주스에 섞어 손쉽게 건강 음료를 만들 수 있습니다. 특히 스피루리나 분말을 물에 타서 마시면 피부와 면역력에 좋은 효과를 볼 수 있습니다.</li>                
+                </ul>
+        </ol>
+
+    </div>
+    <div id="fix">
+        학번:201902816<br>
+        이름:신지훈
+    </div>
+</body>
+</html>
