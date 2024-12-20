@@ -1,0 +1,35 @@
+
+  /* 게시판 스타일 */
+  .board {
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #57423f;
+  }
+  
+  th {
+    background-color: #815854;
+    color: #F9EBDE;
+  }
+  td{
+    background-color: white;
+  }
+  
+  a {
+    color: #57423f;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: darkkhaki;
+  }
